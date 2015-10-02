@@ -1,0 +1,135 @@
+=============================================================================
+Manual Testing of GUI
+=============================================================================
+
+We tested the functionality of your code using the following 6 scenarios.
+
+The input files timetable.txt, lineUp.txt and short_lineUp.txt that
+were used for the testing is available from the Blackboard page where
+you found this file.
+
+------------------------------------------------------------------------------------------------
+Scenario 1: loading errors for timetable.txt and lineUp.txt 
+------------------------------------------------------------------------------------------------
+
+(i) INPUT: timetable.txt is not well formatted. An incorrect line has been added to the top of the file.
+
+(i) OUTPUT: Appropriate error message displayed via GUI.
+
+This should include the fact that (i) the shuttle timetable could not
+be loaded because (ii) it was not appropriately formatted because of (iii) the
+detail error messge associated with the format problem.
+
+Graceful behaviour afterwards (e.g. may close, or allow user to close it.)
+
+(ii) INPUT: lineUp.txt cannot be read because it doesn't exist. (Temporarily moved somewhere else.)
+
+(ii) OUTPUT: Appropriate error message displayed via GUI.
+
+This should include the fact that (i) the line-up could not be loaded
+because (ii) of an error reading the file because (iii) the detail
+error messge associated with the IO problem.
+
+Graceful behaviour afterwards (e.g. may close, or allow user to close it.)
+
+------------------------------------------------------------------------------------------------
+Scenario 2: program initialisation and robustness
+------------------------------------------------------------------------------------------------
+
+INPUT: Run program with the valid input files. For robustness check
+that adding invalid inputs (if you can) doesn't cause the system to
+fail (and has messages if appropriate). 
+
+For example we checked that (depending on interface):
+
+(i) trying to add an event, when no events are selected does no harm
+(ii) trying to remove an event when there are none, or there are none selected does no harm
+
+OUTPUT: The program should load successfully, and the plan should be
+empty. If the lineup is visible, it should correspond to the input file. 
+
+No combination of invalid inputs causes the system to fail. If the
+program behaved in an unexpected way to unexpected inputs at any time
+during testing, marks were deducted for this test case.
+
+NOTE: If the program couldn't be used becuase the line-up was too big, then
+marks were deducted for this test case, and the shorter line-up was
+used for the rest of the testing.
+
+------------------------------------------------------------------------------------------------
+Scenario 3: addition of compatible events
+------------------------------------------------------------------------------------------------
+
+INPUT: Add the following events to the plan (in this order):
+
+Alestorm: session 5 at v4
+Exodus: session 2 at v2
+Wasted Shells: session 10 at v7
+Slash: session 9 at v1
+Dokken: session 6 at v4
+
+OUTPUT: plan is updated with those events and displayed in session-order in some reasonable format:
+
+Exodus: session 2 at v2
+Alestorm: session 5 at v4
+Dokken: session 6 at v4
+Slash: session 9 at v1
+Wasted Shells: session 10 at v7
+
+NOTE: The remainder of the tests depend on these events being able to
+be added successfully. If they couldn't be, then the marker could, at
+their discretion, continue with the rest of the tests if they could
+get at least some of these to be added successfully (by adding them in
+any order). Marks were deducted in those tests if the further
+scenarios attempted weren't as sophisticated as the ones actually
+specified here.
+
+------------------------------------------------------------------------------------------------
+Scenario 4: remove and re-add events from plan
+------------------------------------------------------------------------------------------------
+
+INPUT: Remove the following events from the plan (in this order), and then add them back (in that order):
+
+Exodus: session 2 at v2
+Dokken: session 6 at v4
+
+OUTPUT: Events removed, and then added again to plan. At all times the
+plan should be displayed in session-order in some reasonable format.
+
+------------------------------------------------------------------------------------------------
+Scenario 5: addition of incompatible events to plan -- duplicate and sessions clash
+------------------------------------------------------------------------------------------------
+
+(i) INPUT: Attempt to add event already in plan:
+
+Slash: session 9 at v1
+
+(i) OUTPUT: Either user is unable to add event again (e.g. it is not
+available now) or the user is notified of the incomapatibility and the
+reason (the event already exists in the plan) and the plan is not modified.
+
+(ii) INPUT: Attempt to add event for a session that is already taken:
+
+Toto: session 6 at v1
+
+(ii) OUTPUT: Either user is unable to add event (e.g. it is not
+available now because it is on at the same session) or the user is
+notified of the incomapatibility and the reason (there is already an
+event scheduled for session 6) and the plan is not modified.
+
+------------------------------------------------------------------------------------------------
+Scenario 6: addition of incompatible events to plan -- can't reach problems
+------------------------------------------------------------------------------------------------
+
+(i) INPUT: Attempt to add event that can't be reached from the previous event
+
+The Darkness: session 4 at v3
+
+(i) OUTPUT: The user is notified of the incompatibility and the reason, and the plan is not modified. 
+
+(ii) INPUT: Attempt to add event for which the next event can't be reached:
+
+Five Finger Death Punch: session 7 at v2
+
+(ii) OUTPUT: The user is notified of the incompatibility and the reason, and the plan is not modified. 
+

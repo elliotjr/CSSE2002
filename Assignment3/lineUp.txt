@@ -1,0 +1,52 @@
+Megadeth: session 1 at v1
+Def Leppard: session 3 at v1
+Gojira: session 4 at v1
+Toto: session 6 at v1
+Torsson: session 7 at v1
+Slash: session 9 at v1
+Exodus: session 2 at v2
+Backyard Babies: session 4 at v2
+Molly Hatchet: session 5 at v2
+Five Finger Death Punch: session 7 at v2
+Dark Tranquillity: session 9 at v2
+Mustasch: session 10 at v2
+Opeth: session 3 at v3
+The Darkness: session 4 at v3
+Riot V: session 5 at v3
+Jon English: session 6 at v3
+Michael Monroe: session 7 at v3
+Hammerfall: session 1 at v4
+Meshuggah: session 2 at v4
+HEAT: session 3 at v4
+Lucifers Friend: session 4 at v4
+Alestorm: session 5 at v4
+Dokken: session 6 at v4
+Rockklassiker All Stars: session 7 at v4
+Kaipa Da Capo: session 9 at v4
+Samael: session 10 at v4
+Airbourne: session 2 at v5
+Refuge: session 3 at v5
+Evergrey: session 4 at v5
+Ghost: session 5 at v5
+The Angels: session 8 at v5
+Exciter: session 9 at v5
+BattleBeast: session 1 at v6
+Lillasyster: session 2 at v6
+Mad Max: session 3 at v6
+The Sirens: session 6 at v6
+Marduk: session 8 at v6
+Playalong Guitar Battle: session 9 at v6
+Wolf: session 3 at v7
+Frantic Amber: session 4 at v7
+Kee Man Hawk: session 5 at v7
+Morbus Chron: session 6 at v7
+Yardstones: session 7 at v7
+Portrait: session 8 at v7
+Steve n Seagulls: session 9 at v7
+Wasted Shells: session 10 at v7
+Deception: session 1 at v8
+Safemode: session 4 at v8
+Maida Vale: session 5 at v8
+Royal Ruckus: session 7 at v8
+Ergonaut: session 9 at v8
+Browsing Collection: session 10 at v8
